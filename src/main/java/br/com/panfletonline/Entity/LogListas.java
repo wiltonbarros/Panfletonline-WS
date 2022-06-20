@@ -1,5 +1,8 @@
 package br.com.panfletonline.Entity;
 
+import javax.persistence.Entity;
+
+@Entity
 public class LogListas {
 
 	private int cod_produto;

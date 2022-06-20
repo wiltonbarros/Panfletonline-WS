@@ -1,7 +1,16 @@
 package br.com.panfletonline.Entity;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Cidades {
 
+	@Id @GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name="id", updatable = false, unique = true, nullable = false)
 	private int cod_cidade;
 	private String desc_cidade;
 	private String uf_cidade;

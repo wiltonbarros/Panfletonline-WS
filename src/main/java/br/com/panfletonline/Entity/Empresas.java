@@ -1,7 +1,17 @@
 package br.com.panfletonline.Entity;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Empresas {
 	
+	@Id @GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name="id", updatable = false, unique = true, nullable = false)
+	private int id;
 	private String raz_social;
 	private String nom_fantasia;
 	private int cod_cidade;	
@@ -14,6 +24,13 @@ public class Empresas {
 	private String img1, img2, img3;
 	private String logo;
 	private String site;
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
 	
 	public String getRaz_social() {
 		return raz_social;

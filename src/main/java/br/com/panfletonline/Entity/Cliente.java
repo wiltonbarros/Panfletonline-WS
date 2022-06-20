@@ -1,9 +1,28 @@
 package br.com.panfletonline.Entity;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Cliente {
+	
+	@Id @GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name="id", updatable = false, unique = true, nullable = false)
+	private int id;
 	private String nome;
 	private int idade;
 	private int peso;
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	
 	public String getNome() {
 		return nome;
 }

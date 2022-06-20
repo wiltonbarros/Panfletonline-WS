@@ -1,10 +1,17 @@
 package br.com.panfletonline.Entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 @Entity
 public class LogListas {
 
+	@Id @GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name="id", updatable = false, unique = true, nullable = false)
+	private int id;
 	private int cod_produto;
 	private int cod_cidade;
 	private String dat_ini;
@@ -14,6 +21,14 @@ public class LogListas {
 	private double val_normal;
 	private double val_reduz;
 	private String usuario;
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	
 	public int getCod_produto() {
 		return cod_produto;
 	}

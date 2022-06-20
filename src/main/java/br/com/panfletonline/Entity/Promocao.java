@@ -1,7 +1,16 @@
 package br.com.panfletonline.Entity;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Promocao {
 	
+	@Id @GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name="codigo", updatable = false, unique = true, nullable = false)
 	private int codigo;
 	private int cod_emp;
 	private String dat_ini;

@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.panfletonline.Entity.Cliente;
-import br.com.panfletonline.Entity.Usuario;
 import br.com.panfletonline.Repository.ClienteRepository;
 
 @RestController

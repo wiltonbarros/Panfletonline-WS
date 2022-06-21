@@ -9,13 +9,12 @@ import javax.persistence.Id;
 @Entity
 public class Empresas {
 	
-	@Id @GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name="id", updatable = false, unique = true, nullable = false)
-	private int id;
+	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name="cod_empresa", updatable = false, unique = true, nullable = false)
+	private int cod_empresa;
 	private String raz_social;
 	private String nom_fantasia;
 	private int cod_cidade;	
-	private int cod_empresa;
 	private String telefone;
 	private String seg, ter, qua, qui, sex, sab, dom;
 	private String endereco;
@@ -25,13 +24,7 @@ public class Empresas {
 	private String logo;
 	private String site;
 	
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
-	
+		
 	public String getRaz_social() {
 		return raz_social;
 	}

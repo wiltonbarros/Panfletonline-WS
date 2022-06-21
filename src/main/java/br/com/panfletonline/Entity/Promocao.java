@@ -9,7 +9,7 @@ import javax.persistence.Id;
 @Entity
 public class Promocao {
 	
-	@Id @GeneratedValue(strategy = GenerationType.AUTO)
+	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name="codigo", updatable = false, unique = true, nullable = false)
 	private int codigo;
 	private int cod_emp;

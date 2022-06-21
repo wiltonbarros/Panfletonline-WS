@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.panfletonline.Entity.Promocao;
-import br.com.panfletonline.Entity.Usuario;
 import br.com.panfletonline.Repository.PromocaoRepository;
 
 @RestController

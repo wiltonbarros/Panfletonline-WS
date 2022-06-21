@@ -9,7 +9,7 @@ import javax.persistence.Id;
 @Entity
 public class Listas {
 
-	@Id @GeneratedValue(strategy = GenerationType.AUTO)
+	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name="id", updatable = false, unique = true, nullable = false)
 	private int codigo;
 	private int cod_prod;

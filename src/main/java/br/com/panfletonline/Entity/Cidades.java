@@ -9,8 +9,8 @@ import javax.persistence.Id;
 @Entity
 public class Cidades {
 
-	@Id @GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name="id", updatable = false, unique = true, nullable = false)
+	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name="cod_cidade", updatable = false, unique = true, nullable = false)
 	private int cod_cidade;
 	private String desc_cidade;
 	private String uf_cidade;

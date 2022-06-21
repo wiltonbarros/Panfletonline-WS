@@ -15,7 +15,6 @@ public class Produto {
 	private String descricao;
 	private String marca;
 	private String unid_medida;
-	private double quant;
 	private String info_adc;
 	private String imagem;
 	public int getCodigo() {
@@ -41,12 +40,6 @@ public class Produto {
 	}
 	public void setUnid_medida(String unid_medida) {
 		this.unid_medida = unid_medida;
-	}
-	public double getQuant() {
-		return quant;
-	}
-	public void setQuant(double quant) {
-		this.quant = quant;
 	}
 	public String getInfo_adc() {
 		return info_adc;

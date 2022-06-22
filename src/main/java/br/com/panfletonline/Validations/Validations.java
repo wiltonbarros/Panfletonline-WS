@@ -17,9 +17,6 @@ public class Validations {
 		StringBuilder hexString = new StringBuilder(2 * hash3.length);
 	    for (int i = 0; i < hash3.length; i++) {
 	        String hex = Integer.toHexString(0xff & hash3[i]);
-	        if(hex.length() == 1) {
-	            hexString.append('0');
-	        }
 	        hexString.append(hex);
 	    }
 	    return hexString.toString();

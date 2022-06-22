@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import br.com.panfletonline.Entity.Usuario;
 import br.com.panfletonline.Repository.UsuarioRepository;
+import br.com.panfletonline.Validations.Validations;
 
 @RestController
 @RequestMapping("/usuarios")
@@ -20,16 +21,18 @@ public class UsuarioController {
 	
 	
 	@GetMapping
-	public int lista(@RequestParam(required = true) String email, @RequestParam(required = true) String senha) {
-		List<Usuario> usuarios = null;
-	//	if (nomeCurso == null) {
-			//usuarios = usuarioRepository.findAll();
+	public String validaUsuario(@RequestParam(required = true) String email, @RequestParam(required = true) String senha) {
+	
+		Validations validations = new Validations();
+		if (usuarioRepository.validaUsuario(email, senha)>0) {
+			return validations.geraHash(email);
+		}else {
+			return "[]";
+		}
 		
-		//}else {
-		//	topicos = topicoRepository.findByCurso_Nome(nomeCurso);
-		//}
 		
-		return usuarioRepository.validaUsuario(email, senha);
+		
+		
 	}
 
 }

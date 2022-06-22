@@ -18,6 +18,8 @@ public class Usuario {
 	private int cidade_usuario;
 	private String senha_provisoria;
 	private String termo_uso;
+	private String hash;
+	
 	
 	public Usuario() {}
 	
@@ -65,6 +67,14 @@ public class Usuario {
 		this.termo_uso = termo_uso;
 	}
 	
+	public String getHash() {
+		return hash;
+	}
+
+
+	public void setHash(String hash) {
+		this.hash = hash;
+	}
 	
 
 }

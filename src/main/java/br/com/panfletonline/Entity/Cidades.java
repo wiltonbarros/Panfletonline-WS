@@ -5,6 +5,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 
 @Entity
 public class Cidades {
@@ -12,8 +14,21 @@ public class Cidades {
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name="cod_cidade", updatable = false, unique = true, nullable = false)
 	private int cod_cidade;
+	
+	@NotNull @NotEmpty
+	@Column(name="desc_cidade", nullable = false)
 	private String desc_cidade;
+	
+	@NotNull @NotEmpty
+	@Column(name="uf_cidade", nullable = false)
 	private String uf_cidade;
+	
+	public Cidades(Cidades c) {
+		this.desc_cidade = c.getDesc_cidade();
+		this.uf_cidade = c.getUf_cidade();
+	}
+	
+	public Cidades() {}
 	
 	
 	public int getCod_cidade() {

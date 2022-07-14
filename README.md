@@ -30,7 +30,10 @@
 <br>
 <br>
 
+<p> O projeto mobile tem o objetivo de divulgar promoções de produtos em supermercados, onde é mostrado o valor normal e promocional, o aplicativo exibe os itens em listas (recycleview) ordenadas por fornecedor e validade da promoção.</P
+  <p>A partir da seleção do usuário, são criadas listas de favoritos onde o usuário poderá salvar localmente se desejar, servindo como uma lista virtual no momento do deslocamento até o estabelecimento.</p>
 <p> Todas as telas apresentadas acima são funcionais e se comunicam via protocolo HTTP com o web service, armazenando informações em base local (sqlite).
+  
 
 
 

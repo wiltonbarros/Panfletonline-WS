@@ -20,8 +20,8 @@
   
    <tr>
     <td valign="top"><img src="https://panfletonline.s3.sa-east-1.amazonaws.com/po3.jpg" width="240" height="400"/></td>
-    <td valign="top"><img src="https://panfletonline.s3.sa-east-1.amazonaws.com/po6.jpg" width="240" height="400"/></td>    
     <td valign="top"><img src="https://panfletonline.s3.sa-east-1.amazonaws.com/po8.jpg" width="240" height="400"/></td>    
+    <td valign="top"><img src="https://panfletonline.s3.sa-east-1.amazonaws.com/po6.jpg" width="240" height="400"/></td>    
     <td valign="top"><img src="https://panfletonline.s3.sa-east-1.amazonaws.com/po7.jpg" width="240" height="400"/></td>    
   </tr>
 </table>

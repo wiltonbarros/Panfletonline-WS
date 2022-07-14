@@ -5,7 +5,7 @@
 
 <p> A primeira versão deste projeto foi desenvolvido sem a utilização do framework Spring, neste momento estou migrando a aplicação backend para Spring Boot.</p>
   
-<p> Este web service está sendo consumido em aplicação android, abaixo alguns prints.</p>
+<p> Este web service está sendo consumido em uma aplicação android, abaixo alguns prints:</p>
 
 <br>
 <br>

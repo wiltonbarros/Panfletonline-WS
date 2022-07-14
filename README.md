@@ -27,6 +27,11 @@
 </table>
 
 
+<br>
+<br>
+
+<p> Todas as telas apresentadas acima são funcionais e se comunicam via protocolo HTTP com o web service, armazenando informações em base local (sqlite).
+
 
 
 
